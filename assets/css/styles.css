@@ -344,7 +344,7 @@ img {
 }
 
 .home__title{
-  font-size: 75px;
+  font-size: var(--biggest-font-size);
   margin-bottom: 0.5rem;
 }
 
@@ -1010,7 +1010,7 @@ img {
 }
 
 .home__container{
-  grid-template-columns: 495px;
+  grid-template-columns: 400px;
   justify-content: center;
 }
 
@@ -1019,7 +1019,7 @@ img {
 }
 
 .skills__description{
-  width: 500px;
+  /*width: 500px;*/
   margin-inline: auto;
 }
 
@@ -1072,6 +1072,7 @@ img {
     font-size: var(--h2-font-size);
     margin-bottom: 2rem;
   }
+
   .home__name{
     margin-bottom: 1rem;  
   }
