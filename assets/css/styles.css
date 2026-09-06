@@ -344,7 +344,7 @@ img {
 }
 
 .home__title{
-  font-size: var(--biggest-font-size);
+  font-size: 75px;
   margin-bottom: 0.5rem;
 }
 
@@ -1019,7 +1019,7 @@ img {
 }
 
 .skills__description{
-  /*width: 500px;*/
+  width: 500px;
   margin-inline: auto;
 }
 
