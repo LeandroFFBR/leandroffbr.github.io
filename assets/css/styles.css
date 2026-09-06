@@ -1066,13 +1066,12 @@ img {
   }
 
   .home__container{
-    grid-template-columns: 1000px;
+    grid-template-columns: 800px;
   }
   .home__subtitle{
     font-size: var(--h2-font-size);
     margin-bottom: 2rem;
   }
-
   .home__name{
     margin-bottom: 1rem;  
   }
