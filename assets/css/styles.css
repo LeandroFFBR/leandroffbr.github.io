@@ -1018,7 +1018,9 @@ img {
   width: 350px;
 }
 
-
+.skills__description{
+  margin-inline: auto;
+}
 
 /* For large devices <> */
 @media (width >= 1150px){
