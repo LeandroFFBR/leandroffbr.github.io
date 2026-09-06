@@ -1018,10 +1018,7 @@ img {
   width: 350px;
 }
 
-.skills__description{
-  width: 500;
-  margin-inline: center;
-}
+
 
 /* For large devices <> */
 @media (width >= 1150px){
