@@ -1009,10 +1009,10 @@ img {
   }
 }
 
-.home__container{
-  /*grid-template-columns: 490px;*/
+/*.home__container{
+  grid-template-columns: 500px;
   justify-content: center;
-}
+}*/
 
 .work__card{
   width: 350px;
