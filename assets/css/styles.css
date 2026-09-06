@@ -1010,7 +1010,7 @@ img {
 }
 
 .home__container{
-  grid-template-columns: 400px;
+  grid-template-columns: 480px;
   justify-content: center;
 }
 
@@ -1019,6 +1019,7 @@ img {
 }
 
 .skills__description{
+  /*width: 500px;*/
   margin-inline: auto;
 }
 
@@ -1065,7 +1066,7 @@ img {
   }
 
   .home__container{
-    grid-template-columns: 800px;
+    grid-template-columns: 1000px;
   }
   .home__subtitle{
     font-size: var(--h2-font-size);
