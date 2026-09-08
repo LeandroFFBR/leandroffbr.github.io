@@ -18,8 +18,8 @@
       -> Choose any color 
       -> Copy the color mode (HSL)
   */
-  --hue: 110;
-  --first-color: hsl(var(--hue), 75%, 60%);
+  --hue: 220;
+  --first-color: hsl(var(--hue), 80%, 60%);
   --gradient-color: linear-gradient(90deg, hsl(var(--hue), 75%, 60%) 0%,
                                            hsl(var(--hue), 100%, 85%) 40%,
                                            hsl(var(--hue), 100%, 85%) 60%,
@@ -218,6 +218,7 @@ img {
     z-index: var(--z-fixed);
     transition: right 0.4s;
   }
+
 }
 
 .nav__list{
@@ -390,9 +391,9 @@ img {
 
 .home__img{
   position: absolute;
-  width: 190px;
+  width: 300px;
   bottom: 2.5rem;
-  right: -1.25rem;
+  right: -1.90rem;
   mask-image: linear-gradient(to bottom,
                               hsla(var(--hue), 75%, 60%) 70%,
                               transparent 100%);
@@ -1082,7 +1083,7 @@ img {
     height: 300px;
   }
   .home__img{
-    width: 230px;
+    width: 500px;
   }
   .home__circle{
     right: -3rem;
