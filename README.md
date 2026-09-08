@@ -1,6 +1,6 @@
-# Responsive Portfolio Website Bianca
+# Responsive Portfolio Website
 
-This project is part of a step-by-step YouTube tutorial in which we build a responsive portfolio website Bianca from scratch using HTML, CSS and JavaScript.
+This project is part of a step-by-step YouTube tutorial in which we build a responsive portfolio website from scratch using HTML, CSS and JavaScript.
 
 ![preview img](/exemplo.png) 
 
