@@ -5,7 +5,7 @@ This project is part of a step-by-step YouTube tutorial in which we build a resp
 ![preview img](/exemplo.png) 
 
 ## 📌 Project Features
-- Fully responsive portfolio website Bianca (Mobile First Methodology).
+- Fully responsive portfolio website (Mobile First Methodology).
 - Clear and semantic HTML structure.
 - Use of CSS variables and modern JavaScript functions.
 - Smooth scrolling between sections.
@@ -22,7 +22,5 @@ You can **clone** the repository to your local machine or **fork** it in your Gi
 
 ```bash
 # Clone the repository using HTTPS
-git clone https://github.com/bedimcode/responsive-porfolio-website-Bianca.git
-```
-
-Designed & developed with ❤️ by **[Bedimcode](https://www.youtube.com/@Bedimcode)** 
+git clone git@github.com:LeandroFFBR/agente-de-ia-python.git
+``` 
