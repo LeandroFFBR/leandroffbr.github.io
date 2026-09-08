@@ -2,9 +2,7 @@
 
 This project is part of a step-by-step YouTube tutorial in which we build a responsive portfolio website Bianca from scratch using HTML, CSS and JavaScript.
 
-## 🎬 [Watch the Demo & Code](https://youtu.be/JSFIGIA9Zrk) 
-
-![preview img](/preview.png) 
+![preview img](/exemplo.png) 
 
 ## 📌 Project Features
 - Fully responsive portfolio website Bianca (Mobile First Methodology).
