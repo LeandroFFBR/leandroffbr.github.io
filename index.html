@@ -1,31 +1,46 @@
 <!DOCTYPE html>
-   <html lang="en">
+   <html lang="pt-BR">
    <head>
       <meta charset="UTF-8">
-      <meta name="description" content="Experienced professional offering high-quality digital and creative services. Discover my portfolio and work with me to turn your ideas into impactful results.">
-      <meta name="robots" content="index, follow">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Portfólio de Leandro Felix Felicio - Engenheiro de Software & Desenvolvedor Backend especializado em C#, .NET, Python, APIs RESTful e Banco de Dados.">
+      <meta name="keywords" content="Leandro Felix, Desenvolvedor Backend, C#, .NET, Python, FastAPI, Engenheiro de Software, SQL, MongoDB, Portfólio">
+      <meta name="author" content="Leandro Felix Felicio">
+      <meta name="robots" content="index, follow">
+
+      <!--=============== OPEN GRAPH / FACEBOOK / LINKEDIN / WHATSAPP ===============-->
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://leandroffbr.github.io/">
+      <meta property="og:title" content="Leandro Felix | Engenheiro de Software & Desenvolvedor Backend">
+      <meta property="og:description" content="Aplicações web robustas, APIs eficientes e sistemas em C# / .NET, Python e SQL. Conheça meus projetos.">
+      <meta property="og:image" content="https://leandroffbr.github.io/preview.png">
+
+      <!--=============== TWITTER ===============-->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="Leandro Felix | Engenheiro de Software & Desenvolvedor Backend">
+      <meta name="twitter:description" content="Aplicações web robustas, APIs eficientes e sistemas em C# / .NET, Python e SQL. Conheça meus projetos.">
+      <meta name="twitter:image" content="https://leandroffbr.github.io/preview.png">
 
       <!--=============== FAVICON ===============-->
       <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 
-      <!--=============== REMIXICONS - Insert link for icons ===============-->
+      <!--=============== REMIXICONS ===============-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
 
-      <!--=============== SWIPER CSS - Insert link for swiperjs ===============-->
+      <!--=============== SWIPER CSS ===============-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Responsive portfolio website | Bedimcode</title>
+      <title>Leandro Felix | Engenheiro de Software & Desenvolvedor Backend</title>
    </head>
    <body>
       <!--==================== HEADER & NAV ====================-->
       <header class="header" id="header">
          <nav class="nav container">
-            <a href="/index.html" class="nav__logo">
-            <img src="assets/img/logotipo_lff.png" alt="Logotipo Leandro Felix" class="nav__logo-img"> <!--mudei aqui-->
+            <a href="#home" class="nav__logo" aria-label="Ir para o topo">
+               <img src="assets/img/logotipo_lff.png" alt="Logotipo Leandro Felix" class="nav__logo-img">
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -309,8 +324,8 @@
                
                <article class="services__card services-close">
                   <button class="services__button">
-                        <i class="ri-pen-nib-line services__icon"></i>
-                        <h3 class="services__name">Automação & Scripts </h3>
+                        <i class="ri-robot-line services__icon"></i>
+                        <h3 class="services__name">Automação & Scripts</h3>
 
                         <div class="services__arrow">
                            <i class="ri-arrow-down-s-line"></i>
@@ -319,8 +334,8 @@
 
                   <div class="services__data">
                      <p class="services__description">
-                        Desenvolvimento de scripts para automação de tarefas repetitivas, extração de dados (scraping) 
-                        e manipulação eficiente de informações.
+                        Desenvolvimento de scripts para automação de tarefas repetitivas, extração de dados (scraping), 
+                        integração de agentes inteligentes e manipulação eficiente de informações.
                      </p>
 
                      <ul class="services__list">
@@ -329,14 +344,14 @@
                         <li class="services__item">Manipulação de Dados</li>
                         <li class="services__item">Consultas SQL</li>
                         <li class="services__item">Agente IA</li>
-                        <li class="services__item">Excel</li>
+                        <li class="services__item">APIs & Webhooks</li>
                      </ul>
                   </div>
                </article>
 
                <article class="services__card services-close">
                   <button class="services__button">
-                        <i class="ri-seo-line services__icon"></i>
+                        <i class="ri-stack-line services__icon"></i>
                         <h3 class="services__name">Arquitetura de Software</h3>
 
                         <div class="services__arrow">
@@ -352,11 +367,10 @@
 
                      <ul class="services__list">
                         <li class="services__item">Clean Code</li>
-                        <li class="services__item">Arquitetura de Software</li>
+                        <li class="services__item">Arquitetura em Camadas</li>
                         <li class="services__item">Versionamento Git</li>
-                        <li class="services__item">Lógica de Programação</li>
-                        <!--<li class="services__item"></li>-->
-                        <!--<li class="services__item"></li>-->
+                        <li class="services__item">Modelagem de Dados</li>
+                        <li class="services__item">Boas Práticas de API</li>
                      </ul>
                   </div>
                </article>
@@ -370,131 +384,135 @@
             </h2>
 
             <p class="skills__description">
-               Minhas habilidades foram moldadas por anos de estudo, foco e consistência naquilo 
-               que mais amo fazer. Hoje, transformo ideias em realidade utilizando um ecossistema 
-               sólido de tecnologias, que vai do design de interfaces no Frontend à arquitetura de 
-               dados no Backend.
+               Minhas habilidades foram construídas através de estudo contínuo e prática no desenvolvimento de software. Domino um ecossistema sólido para construir soluções completas: desde interfaces dinâmicas no Frontend até APIs de alta performance, microsserviços e modelagem de dados no Backend.
             </p>
 
             <div class="skills__container container grid">
+               <!-- Card 1: Backend -->
+               <article class="skills__card">
+                  <div class="skills__profession">
+                        <i class="ri-terminal-box-line skills__icon"></i>
+                        <h2 class="skills__title">Backend</h2>
+                  </div>
+
+                  <ul class="skills__list">
+                     <li class="skills__item">
+                        <img src="assets/img/skills-csharp.svg" alt="C#" class="skills__img">
+                        <span class="skills_name">C#</span>
+                     </li>
+
+                     <li class="skills__item">
+                        <img src="assets/img/skills-dotnet.svg" alt=".NET" class="skills__img">
+                        <span class="skills_name">.NET / .NET Core</span>
+                     </li>
+
+                     <li class="skills__item">
+                        <img src="assets/img/skills-python.svg" alt="Python" class="skills__img">
+                        <span class="skills_name">Python</span>
+                     </li>
+
+                     <li class="skills__item">
+                        <img src="assets/img/skills-fastapi.svg" alt="FastAPI" class="skills__img">
+                        <span class="skills_name">FastAPI</span>
+                     </li>
+
+                     <li class="skills__item">
+                        <img src="assets/img/skills-backend-3.svg" alt="Node.js" class="skills__img">
+                        <span class="skills_name">Node.js</span>
+                     </li>
+
+                     <li class="skills__item">
+                        <img src="assets/img/skills-postman.svg" alt="APIs RESTful" class="skills__img">
+                        <span class="skills_name">APIs RESTful</span>
+                     </li>
+                  </ul>
+
+                  <div class="blob-small"></div>
+               </article>
+
+               <!-- Card 2: Banco de Dados & Ferramentas -->
+               <article class="skills__card">
+                  <div class="skills__profession">
+                        <i class="ri-database-2-line skills__icon"></i>
+                        <h2 class="skills__title">Banco de Dados & DevOps</h2>
+                  </div>
+
+                  <ul class="skills__list">
+                     <li class="skills__item">
+                        <img src="assets/img/skills-sqlserver.svg" alt="SQL Server" class="skills__img">
+                        <span class="skills_name">SQL Server</span>
+                     </li>
+
+                     <li class="skills__item">
+                        <img src="assets/img/skills-backend-2.svg" alt="PostgreSQL" class="skills__img">
+                        <span class="skills_name">PostgreSQL</span>
+                     </li>
+
+                     <li class="skills__item">
+                        <img src="assets/img/skills-mongodb.svg" alt="MongoDB" class="skills__img">
+                        <span class="skills_name">MongoDB</span>
+                     </li>
+
+                     <li class="skills__item">
+                        <img src="assets/img/skills-docker.svg" alt="Docker" class="skills__img">
+                        <span class="skills_name">Docker</span>
+                     </li>
+
+                     <li class="skills__item">
+                        <img src="assets/img/skills-frontend-6.svg" alt="Git" class="skills__img">
+                        <span class="skills_name">Git</span>
+                     </li>
+
+                     <li class="skills__item">
+                        <img src="assets/img/skills-frontend-7.svg" alt="GitHub" class="skills__img">
+                        <span class="skills_name">GitHub</span>
+                     </li>
+
+                     <li class="skills__item">
+                        <img src="assets/img/skills-postman.svg" alt="Postman" class="skills__img">
+                        <span class="skills_name">Postman</span>
+                     </li>
+                  </ul>
+
+                  <div class="blob-small"></div>
+               </article>
+
+               <!-- Card 3: Frontend -->
                <article class="skills__card">
                   <div class="skills__profession">
                         <i class="ri-layout-3-line skills__icon"></i>
                         <h2 class="skills__title">Frontend</h2>
                   </div>
 
-                  <!--More icons at https://svgl.app/ - https//svglogos.dev/-->
                   <ul class="skills__list">
                      <li class="skills__item">
-                        <img src="assets/img/skills-frontend-1.svg" alt="Technical skills" class="skills__img">
-                        <span class="skills_name">HTML</span>
+                        <img src="assets/img/skills-frontend-1.svg" alt="HTML5" class="skills__img">
+                        <span class="skills_name">HTML5</span>
                      </li>
 
                      <li class="skills__item">
-                        <img src="assets/img/skills-frontend-2.svg" alt="Technical skills" class="skills__img">
-                        <span class="skills_name">CSS</span>
+                        <img src="assets/img/skills-frontend-2.svg" alt="CSS3" class="skills__img">
+                        <span class="skills_name">CSS3</span>
                      </li>
 
                      <li class="skills__item">
-                        <img src="assets/img/skills-frontend-3.svg" alt="Technical skills" class="skills__img">
+                        <img src="assets/img/skills-frontend-3.svg" alt="JavaScript" class="skills__img">
                         <span class="skills_name">JavaScript</span>
                      </li>
 
                      <li class="skills__item">
-                        <img src="assets/img/skills-frontend-4.svg" alt="Technical skills" class="skills__img">
+                        <img src="assets/img/skills-frontend-4.svg" alt="React" class="skills__img">
                         <span class="skills_name">React</span>
                      </li>
 
                      <li class="skills__item">
-                        <img src="assets/img/skills-frontend-5.svg" alt="Technical skills" class="skills__img">
+                        <img src="assets/img/skills-frontend-8.svg" alt="Tailwind CSS" class="skills__img">
+                        <span class="skills_name">Tailwind CSS</span>
+                     </li>
+
+                     <li class="skills__item">
+                        <img src="assets/img/skills-frontend-5.svg" alt="Sass" class="skills__img">
                         <span class="skills_name">Sass</span>
-                     </li>
-
-                     <li class="skills__item">
-                        <img src="assets/img/skills-frontend-6.svg" alt="Technical skills" class="skills__img">
-                        <span class="skills_name">Git</span>
-                     </li>
-
-                     <li class="skills__item">
-                        <img src="assets/img/skills-frontend-7.svg" alt="Technical skills" class="skills__img">
-                        <span class="skills_name">GitHub</span>
-                     </li>
-                  </ul>
-
-                  <div class="blob-small"></div>
-               </article>
-               
-               <article class="skills__card">
-                  <div class="skills__profession">
-                        <i class="ri-database-line skills__icon"></i>
-                        <h2 class="skills__title">Backend</h2>
-                  </div>
-
-                  <ul class="skills__list">
-                     <li class="skills__item">
-                        <img src="assets/img/skills-backend-1.svg" alt="Technical skills" class="skills__img">
-                        <span class="skills_name">Laravel</span>
-                     </li>
-
-                     <li class="skills__item">
-                        <img src="assets/img/skills-backend-2.svg" alt="Technical skills" class="skills__img">
-                        <span class="skills_name">PostgreSQL</span>
-                     </li>
-
-                     <li class="skills__item">
-                        <img src="assets/img/skills-backend-3.svg" alt="Technical skills" class="skills__img">
-                        <span class="skills_name">Node Js</span>
-                     </li>
-
-                     <li class="skills__item">
-                        <img src="assets/img/skills-backend-4.svg" alt="Technical skills" class="skills__img">
-                        <span class="skills_name">Supabase</span>
-                     </li>
-
-                     <li class="skills__item">
-                        <img src="assets/img/skills-backend-5.svg" alt="Technical skills" class="skills__img">
-                        <span class="skills_name">Socket.io</span>
-                     </li>
-                  </ul>
-
-                  <div class="blob-small"></div>
-               </article>
-               
-               <article class="skills__card">
-                  <div class="skills__profession">
-                        <i class="ri-pencil-ruler-2-line skills__icon"></i>
-                        <h2 class="skills__title">Design</h2>
-                  </div>
-
-                  <ul class="skills__list">
-                     <li class="skills__item">
-                        <img src="assets/img/skills-design-1.svg" alt="Technical skills" class="skills__img">
-                        <span class="skills_name">Figma</span>
-                     </li>
-                     
-                     <li class="skills__item">
-                        <img src="assets/img/skills-design-2.svg" alt="Technical skills" class="skills__img">
-                        <span class="skills_name">Blender</span>
-                     </li>
-                     
-                     <li class="skills__item">
-                        <img src="assets/img/skills-design-3.svg" alt="Technical skills" class="skills__img">
-                        <span class="skills_name">After Effect</span>
-                     </li>
-                     
-                     <li class="skills__item">
-                        <img src="assets/img/skills-design-4.svg" alt="Technical skills" class="skills__img">
-                        <span class="skills_name">Photoshop</span>
-                     </li>
-                     
-                     <li class="skills__item">
-                        <img src="assets/img/skills-design-5.svg" alt="Technical skills" class="skills__img">
-                        <span class="skills_name">Ilustrator</span>
-                     </li>
-                     
-                     <li class="skills__item">
-                        <img src="assets/img/skills-design-6.svg" alt="Technical skills" class="skills__img">
-                        <span class="skills_name">Framer</span>
                      </li>
                   </ul>
 
@@ -502,44 +520,6 @@
                </article>
             </div>
          </section>
-
-         <!--==================== TESTIMONIALS SECTION ====================-->
-         <!--<section class="testimonials section">
-            <h2 class="section__title">
-               <span>What</span> They Say
-            </h2>
-
-            <div class="testimonials__container container grid">
-               <div class="testimonials__content">
-                  <article class="testimonials__card">
-                        <div class="testimonials__rating">
-                           <span class="testimonials__number">5.0</span>
-
-                           <div class="testimonials__stars">
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                           </div>
-
-                        </div>
-
-                        <blockquote class="testimonials__description">
-                           “This young man is very disciplined; he delivered a professional and 
-                           high-quality project. He is always in contact and active regarding 
-                           time, Good work.”
-                        </blockquote>
-
-                        <div class="testimonials__profile">
-                           <img src="" alt="" class="testimonials__img">
-                        </div>
-
-                        <div class="blob-big"></div>
-                  </article>
-               </div>
-            </div>            
-         </section>-->
 
          <!--==================== CONTACT SECTION ====================-->
          <section class="contact section" id="contact">
@@ -588,20 +568,20 @@
                      </div>
                   </a>
                   
-                  <!--<a href="+55 0000000-0000" target="_blank" class="contact__link">
+                  <a href="https://www.linkedin.com/in/leandro-felix-felicio/" target="_blank" rel="noopener noreferrer" class="contact__link">
                      <div class="contact__info">
-                        <i class="ri-phone-line contact__icon"></i>
+                        <i class="ri-linkedin-box-line contact__icon"></i>
 
                         <div class="contact__text">
-                              <h3 class="contact__title">Tel</h3>
-                              <address class="contact__address">+55 (00)00000-0000</address>
+                              <h3 class="contact__title">LinkedIn</h3>
+                              <address class="contact__address">leandro-felix-felicio</address>
                         </div>
                      </div>
 
                      <div class="contact__arrow">
                         <i class="ri-arrow-right-up-line"></i>
                      </div>
-                  </a>-->
+                  </a>
                   
                   <a href="https://maps.app.goo.gl/dHfF1Bf1NKRcn4BG7" target="_blank" class="contact__link">
                      <div class="contact__info">
@@ -656,18 +636,7 @@
                         <i class="ri-github-fill"></i>
                      </a>
                   </li>
-                  
-                 <!-- <li>
-                     <a href="" target="_blank" class="footer__social-link">
-                        <i class="ri-facebook-box-fill"></i>
-                     </a>
-                  </li>
-                  
-                  <li>
-                     <a href="" target="_blank" class="footer__social-link">
-                        <i class="ri-instagram-fill"></i>-->
-                     </a>
-                  </li>
+
                </ul>
             </div>
          </div>

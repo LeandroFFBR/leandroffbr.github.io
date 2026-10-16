@@ -44,10 +44,10 @@ letters.forEach((char, i) => {
 
 /*=============== HOME TYPED JS ===============*/
 const typedHome = new Typed('#home-typed', {
-   strings: ['Backend','Desenvolvedor .Net','Analista Dados'], // Insert Profissions
+   strings: ['Desenvolvedor Backend', 'Desenvolvedor .NET & C#', 'Analista de Dados'], // Insert Profissions
    typeSpeed: 60,
    backSpeed: 30,
-   backDelay: 200,
+   backDelay: 2000,
    loop:true,
 })
 
@@ -160,3 +160,19 @@ window.addEventListener('scroll', scrollActive)
 
 
 /*=============== SCROLLREVEAL ANIMATION ===============*/
+if (typeof ScrollReveal !== 'undefined') {
+   const sr = ScrollReveal({
+      origin: 'top',
+      distance: '50px',
+      duration: 1800,
+      delay: 200,
+      reset: false
+   })
+
+   sr.reveal('.section__title')
+   sr.reveal('.home__data, .about__title, .skills__description')
+   sr.reveal('.home__images, .about__info', { delay: 350 })
+   sr.reveal('.services__card, .skills__card', { interval: 100 })
+   sr.reveal('.contact__content', { origin: 'left' })
+   sr.reveal('.contact__form', { origin: 'right', delay: 300 })
+}
