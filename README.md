@@ -10,7 +10,7 @@
 
 <br>
 
-<img src="./preview.png" alt="Prévia do Portfólio" width="850">
+<img src="">
 
 </div>
 
